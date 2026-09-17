@@ -5,6 +5,7 @@ and cost tracking for Claude Code.
 
 ```sh
 brew tap johanvalentini/claude-spend
+brew trust johanvalentini/claude-spend
 brew install claude-spend
 brew services start claude-spend
 claude-spend setup

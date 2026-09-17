@@ -15,6 +15,12 @@ class ClaudeSpend < Formula
   license "MIT"
   head "https://github.com/johanvalentini/claude-spend.git", branch: "main"
 
+  bottle do
+    root_url "https://github.com/johanvalentini/homebrew-claude-spend/releases/download/claude-spend-0.2.0"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:  "649bed5f1e25788fd963cb3616dccfdb4d0e00d257a589fba9f1263842bc6eac"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "16628959ff1f555cf2cd8df88da1c289d25bd219bc5c0348bd7bf2b4d65eb378"
+  end
+
   depends_on "python@3.14"
 
   resource "markdown-it-py" do
